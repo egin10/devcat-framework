@@ -1,5 +1,4 @@
 <?php
-require_once '../app/conf.php';
 
 class Database
 {
@@ -7,7 +6,8 @@ class Database
     private $mysqli;
 
     public function __construct(){
-        $this->mysqli = new mysqli('localhost', 'root', '', 'devcat') or die ('Connection to database failed!');
+        require_once '../app/conf.php';
+        $this->mysqli = new mysqli($host, $user, $pass, $db) or die ('Connection to database failed!');
     }
     
     public function getInstance(){
