@@ -1,5 +1,5 @@
 <?php
-require_once '../conf.php';
+require_once '../app/conf.php';
 
 class Database
 {
@@ -7,19 +7,20 @@ class Database
     private $mysqli;
 
     public function __construct(){
-        $this->mysqli = new mysqli($host, $user, $pass, $db) or die('Connection to database failed!');
+        $this->mysqli = new mysqli('localhost', 'root', '', 'devcat') or die ('Connection to database failed!');
     }
     
     public function getInstance(){
         if(!isset(self::$_instance)){
             self::$_instance = new Database();
         }
+        return self::$_instance;
     }
     
     //Query Builder
-    public function index($table){
+    public function all($table){
         $reply  = [];
-        $query  = 'SELECT * FROM $table';
+        $query  = "SELECT * FROM $table";
         $result = $this->mysqli->query($query);
 
         while($row = $result->fetch_assoc()){

@@ -6,10 +6,4 @@ class HomeController extends Controller
     {
         return $this->view('welcome');
     }
-
-    public function greeting()
-    {
-        $user = $this->model('User');
-        return $this->view('user', ['name' => $user->name, 'age' => $user->age]);
-    }
 }
