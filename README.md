@@ -1,5 +1,5 @@
-# devcat
-devcat-framework
+# DevCat
+Devcat-framework
 ***
 
 ### Usage
@@ -17,6 +17,10 @@ devcat-framework
     * Windows   : `xampp/htdocs/`
 * import `devcat.sql` into your mysql database server
 * access it on [http://localhost/devcat-framework/public/]()
+
+### Branch
+* [Dev-Eloquent]('https://github.com/egin10/devcat-framework/tree/dev-eloquent') - With Eloquent
+* [Dev]('https://github.com/egin10/devcat-framework/tree/dev') - Without Eloquent
 ***
 
 ##### egin10
