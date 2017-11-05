@@ -8,7 +8,7 @@ class UserController extends Controller
     }
 
     public function show(){
-        $model = $this->model('User')->index();
-        var_dump($model);
+        $users = $this->model('User')->index();
+        return $this->view('user', ['users' => $users]);
     }
 }

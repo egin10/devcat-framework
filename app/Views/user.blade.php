@@ -1,15 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>DevCat-Framework</title>
+<?php
+require_once '../app/Views/partials/header.php';
+?>
 
-    <link rel="stylesheet" href="<?php echo $GLOBALS['static']; ?>/css/style.css">
-</head>
-<body>
     <h1>User Page</h1>
     <hr>
-</body>
-</html>
+    
+    <div class="menu">
+        <a href="<?php echo $GLOBALS['static'] ?>/home">Home</a> |
+        <a href="<?php echo $GLOBALS['static'] ?>/user/show" class="active">User</a> |
+        <a href="<?php echo $GLOBALS['static'] ?>/about">About</a> |
+        <a href="https://github.com/egin10/devcat-framework">Github</a>
+    </div>
+
+    <ul>
+        <?php
+            foreach ($data['users'] as $user){
+                echo '<li>'.$user['firstname'].' '.$user['lastname'].'</li>';
+            }
+        ?>
+    </ul>
+
+<?php
+    require_once '../app/Views/partials/footer.php';
+?>
