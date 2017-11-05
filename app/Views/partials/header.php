@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="<?php echo new Css('styles.css'); ?>">
     
     <!-- JS -->
-    <script src="<?php echo new Js('bootstrap.min.js'); ?>"></script>
+    <script src="<?php echo new Js('jquery-3.2.1.min.js'); ?>"></script>
     <script src="<?php echo new Js('bootstrap.min.js'); ?>"></script>
 
 </head>

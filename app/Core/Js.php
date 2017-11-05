@@ -2,7 +2,7 @@
 
 class Js
 {
-    private $path = '/router-admin/public/js/';
+    private $path = '/devcat-framework/public/js/';
 
     public function __construct($pathFile){
         $this->path = $this->path . $pathFile;

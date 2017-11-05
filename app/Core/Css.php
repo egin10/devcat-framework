@@ -2,7 +2,7 @@
 
 class Css
 {
-    private $path = '/router-admin/public/css/';
+    private $path = '/devcat-framework/public/css/';
 
     public function __construct($pathFile){
         $this->path = $this->path . $pathFile;

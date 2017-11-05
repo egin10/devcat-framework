@@ -2,7 +2,7 @@
 
 class Asset
 {
-    private $path = '/router-admin/public/assets/';
+    private $path = '/devcat-framework/public/assets/';
 
     public function __construct($pathFile){
         $this->path = $this->path . $pathFile;
