@@ -9,3 +9,5 @@ spl_autoload_register(function($class){
     //Database
     require_once "App/Database.php";
 });
+
+$app = new App();
