@@ -6,6 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>DevCat-Framework</title>
 
-    <link rel="stylesheet" href="<?php echo $GLOBALS['static']; ?>/css/style.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="<?php echo new Css('bootstrap-3.3.7/css/bootstrap.min.css'); ?>">
+    <link rel="stylesheet" href="<?php echo new Css('bootstrap-3.3.7/css/font-awesome.min.css'); ?>">
+    <link rel="stylesheet" href="<?php echo new Css('styles.css'); ?>">
+    
+    <!-- JS -->
+    <script src="<?php echo new Js('bootstrap.min.js'); ?>"></script>
+    <script src="<?php echo new Js('bootstrap.min.js'); ?>"></script>
+
 </head>
 <body>

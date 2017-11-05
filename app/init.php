@@ -4,4 +4,4 @@ spl_autoload_register(function($class){
     require_once 'Core/'.$class.'.php';
 });
 
-$GLOBALS['static'] = '/devcat-framework/public';
+$GLOBALS['static'] = '/router-admin/public';
