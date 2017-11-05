@@ -2,16 +2,25 @@
 devcat-framework
 ***
 
+### Dependencies
+* [Illuminate\Database]('https://github.com/illuminate/database')
+
 ### Usage
-* rename `conf.php.env` to `conf.php` in directory `app/`
-* edit `conf.php`
-    >$host   = 'host database';
-    >
-    >$user   = 'user database';
-    >
-    >$pass   = 'password database';
-    >
-    >$db     = 'database name';
+* run `composer install && composer dump-autoload -o`
+* rename `Database.php.env` to `Database.php` in directory `app/Core`
+* edit `Database.php`
+```
+    $capsule->addConnection([
+    'driver'    =>  'mysql',
+    'host'      =>  'your host',
+    'username'  =>  'your username',
+    'password'  =>  'your password',
+    'database'  =>  'your database',
+    'charset'   =>  'utf8',
+    'collation' =>  'utf8_unicode_ci',
+    'prefix'    =>  '',
+    ]);
+```
 * move `devcat-framework` into your web server
     * Linux     : `/var/www/html/`
     * Windows   : `xampp/htdocs/`

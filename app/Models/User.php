@@ -1,14 +1,8 @@
 <?php
 
-class User
+use Illuminate\Database\Eloquent\Model as Eloquent;
+
+class User extends Eloquent
 {
-    private $_db;
-
-    public function __construct(){
-        $this->_db = Database::getInstance();
-    }
-
-    public function index(){
-        return $this->_db->all('users');
-    }
+    public $name;
 }

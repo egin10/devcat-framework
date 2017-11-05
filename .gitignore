@@ -1,2 +1,3 @@
-/app/conf.php
+app/conf.php
+app/Core/Database.php
 vendor/

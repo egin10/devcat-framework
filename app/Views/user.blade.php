@@ -15,9 +15,7 @@ require_once '../app/Views/partials/header.php';
     
     <ul>
         <?php
-            foreach ($data['users'] as $user){
-                echo '<li>'.$user['firstname'].' '.$user['lastname'].'</li>';
-            }
+            var_dump($data['users']);
         ?>
     </ul>
 
