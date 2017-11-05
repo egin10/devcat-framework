@@ -6,9 +6,9 @@ require_once '../app/Views/partials/header.php';
     <hr>
     
     <div class="menu text-center">
-        <a href="<?php echo $GLOBALS['static'] ?>/home">Home</a> |
-        <a href="<?php echo $GLOBALS['static'] ?>/user/show">User</a> |
-        <a href="<?php echo $GLOBALS['static'] ?>/about" class="active">About</a> |
+        <a href="<?php echo new Url('home'); ?>">Home</a> |
+        <a href="<?php echo new Url('user/show'); ?>">User</a> |
+        <a href="<?php echo new Url('about'); ?>" class="active">About</a> |
         <a href="https://github.com/egin10/devcat-framework">Github</a>
     </div>
     <hr>

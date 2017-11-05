@@ -6,9 +6,9 @@
     <hr>
     
     <div class="menu text-center">
-        <a href="<?php echo $GLOBALS['static'] ?>/home" class="active">Home</a> |
-        <a href="<?php echo $GLOBALS['static'] ?>/user/show">User</a> |
-        <a href="<?php echo $GLOBALS['static'] ?>/about">About</a> |
+        <a href="<?php echo new Url('home'); ?>" class="active">Home</a> |
+        <a href="<?php echo new Url('user/show'); ?>">User</a> |
+        <a href="<?php echo new Url('about'); ?>">About</a> |
         <a href="https://github.com/egin10/devcat-framework">Github</a>
     </div>
     <hr>

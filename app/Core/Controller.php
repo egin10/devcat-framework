@@ -2,9 +2,14 @@
 
 class Controller
 {
-    public function view($file, $data = [])
+    public function view($files, $data = [])
     {
-        require_once '../app/Views/'.$file.'.blade.php';
+        if(strpos($files, '.')){
+            $file = str_replace('.','/',$files);
+            require_once '../app/Views/'.$file.'.blade.php';
+        }else{
+            require_once '../app/Views/'.$files.'.blade.php';
+        }
     }
 
     public function model($file)
