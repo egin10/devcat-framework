@@ -2,6 +2,13 @@
 
 class User
 {
-    public $name    = 'egin';
-    public $age     = '21';
+    private $_db;
+
+    public function __construct(){
+        $this->_db = Database::getInstance();
+    }
+
+    public function index(){
+        return $this->_db->all('users');
+    }
 }

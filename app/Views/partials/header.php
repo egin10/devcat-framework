@@ -9,7 +9,3 @@
     <link rel="stylesheet" href="<?php echo $GLOBALS['static']; ?>/css/style.css">
 </head>
 <body>
-    <h1>DevCat</h1>
-    <hr>
-</body>
-</html>

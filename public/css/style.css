@@ -7,3 +7,15 @@ h1 {
 hr {
     color: grey;
 }
+
+.menu {
+    text-align: center;
+}
+
+a {
+    color: red; 
+}
+
+a.active {
+    color: green;
+}

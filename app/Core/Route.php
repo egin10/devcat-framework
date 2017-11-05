@@ -13,7 +13,7 @@ class Route
             $urlUp  = ucfirst($url[0]);
             $url[0] = $urlUp.'Controller';
         }else{
-            $url[0] = 'home';
+            $url[0] = 'HomeController';
         }
 
         //Controller
@@ -30,6 +30,10 @@ class Route
         if(isset($url[1])){
             if(method_exists($this->controller, $url[1])){
                 $this->method = $url[1];
+            }else{
+                if($url[1] != null){
+                    return require_once '../app/Views/errors/404.php';
+                }
             }
         }
 
