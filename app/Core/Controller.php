@@ -17,4 +17,9 @@ class Controller
         require_once '../app/Models/'.$file.'.php';
         return new $file();
     }
+
+    public function redirect($url)
+    {
+        return header('Location:'. new Url($url));
+    }
 }
