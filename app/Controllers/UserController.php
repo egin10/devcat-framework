@@ -8,7 +8,8 @@ class UserController extends Controller
     }
 
     public function show(){
-        $users = $this->model('User')->index();
-        return $this->view('user', ['users' => $users]);
+        // $users = $this->model('User')->index();
+        // return $this->view('user', ['users' => $users]);
+        return $this->redirect('home');
     }
 }
